@@ -1,0 +1,29 @@
+print('''What do you choose to be:
+            Rock
+            Scissors
+            Paper''')
+while True:
+    rules = {'Rock': 1, 'Scissors': 2, 'Paper': 3}
+    player1 = str(input("Player 1: "))
+    player2 = str(input("Player 2: "))
+    a = rules.get(player1)
+    b = rules.get(player2)
+    dif = a - b
+
+    if dif in [-1, 2]:
+        print('Player 1 wins!')
+        if str(input('Do you want to play another game: yes or no?\n')) == 'yes':
+            continue
+        else:
+            print('GAME OVER!!!')
+            break
+    elif dif in [-2, 1]:
+        print('Player 2 wins!')
+        if str(input('Do you want to play another game: yes or no?\n')) == 'yes':
+            continue
+        else:
+            print('GAME OVER!!!')
+            break
+    else:
+        print('It is a draw. Continue playing...')
+        print('')
