@@ -1,0 +1,14 @@
+def vowel_off(text):
+    string = ""
+    for i in text:
+        if i.lower() != "a" and i.lower() != "e" and i.lower() != "i" and i.lower() != "o" and i.lower() != "u":
+            string += i
+    return string
+text=input("enter your text")
+print("\n")
+print("Your input text was\n")
+print(text)
+print("\n")
+x= vowel_off(text)
+print("Here's your text without the vowels \n")
+print(x)
