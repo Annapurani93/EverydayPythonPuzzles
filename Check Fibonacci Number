@@ -1,0 +1,14 @@
+import math 
+  
+i=input("Enter a value to check if it is a Fibonacci number or not")
+i=int(i)
+x=int((5*i*i)+4)
+x1= int(math.sqrt(x))
+y=int((5*i*i)-4)
+y1= int(math.sqrt(y))
+if (x1*x1)==x:
+    print (i,"is a Fibonacci number:")
+elif (y1*y1)==y:
+     print (i,"is a Fibonacci number:")
+else: 
+    print (i,"is a not Fibonacci number ")
