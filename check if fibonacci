@@ -1,0 +1,16 @@
+import math 
+  
+def isPerfectSquare(i): 
+    x = int(math.sqrt(i)) 
+    return x*x == i
+  
+def isFibonacci(n): 
+  
+    return isPerfectSquare(5*n*n + 4) or isPerfectSquare(5*n*n - 4) 
+
+i=input("Enter a value to check if it is a Fibonacci number or not")
+i=int(i)
+if (isFibonacci(i) == True): 
+         print (i,"is a Fibonacci number:")
+else: 
+    print (i,"is a not Fibonacci number ")
