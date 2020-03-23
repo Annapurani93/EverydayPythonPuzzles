@@ -1,0 +1,9 @@
+def stringLength(str): 
+    count = 0    
+    for i in str: 
+        count += 1
+    return count 
+  
+  
+str = input("enter the string which you need to find the length for")
+print(stringLength(str)) 
