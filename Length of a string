@@ -5,5 +5,5 @@ def stringLength(str):
     return count 
   
   
-str = input("enter the string which you need to find the length for")
+str = input("enter the string you need to find the length for")
 print(stringLength(str)) 
