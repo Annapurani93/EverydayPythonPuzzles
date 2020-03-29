@@ -1,0 +1,10 @@
+list = [] 
+num = int(input("Enter the number of elements in list: "))
+i=1
+while i<=num:
+    print("Enter number", i, "in the list")
+    x=int(input())
+    list.append(x)  
+    i=i+1
+total=sum(list)
+print("Sum of all elements in given list: ", total)
