@@ -1,0 +1,10 @@
+def factorial(n): 
+    if (n==1 or n==0):
+        return 1
+    else:
+        return n*factorial (n-1)
+    
+  
+num = input("Enter the number you want to find the factorial for:")
+n=int(num)
+print("Factorial of",n,"is", factorial(n)) 
